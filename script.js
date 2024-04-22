@@ -108,6 +108,9 @@ const gameController = function(){
         }
         rounds++;
         }while(rounds < 9);
+        if (rounds == 9) {
+            console.log(`it's a Tie!!`);
+        }
     }
     game();
   
