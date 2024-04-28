@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <script src="./script1.js" defer></script>
 </head>
 <body>
-    
+    <dialog class="start" open>
+        <form method="dialog">
+            <div>
+                <label for="player1"></label>
+                <input type="text" id="player1" placeholder="player one name">
+            </div>
+            <div>
+                <label for="player2"></label>
+                <input type="text" id="player2" placeholder="player two name">
+            </div>
+            <div>
+                <button type="submit" id="play">Play</button>
+            </div>
+        </form>
+    </dialog>
+    <dialog class="end" >
+        <form method="dialog">
+            <div class="winner"></div>
+            <div>
+                <button type="submit" id="end">Play Again</button>
+            </div>
+        </form>
+    </dialog>
+    <div class="container">
+        <div class="players">
+            <h2 class="showPlayer1"></h2>
+            <h2 class="showPlayer2"></h2>
+        </div>
+        <div class="turn"></div>
+        <div class="board"></div>
+        <button>Restart</button>
+    </div>
 </body>
 </html>

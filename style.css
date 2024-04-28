@@ -1,0 +1,127 @@
+html , body{
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 89%;
+    width: 85%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.players{
+    display: flex;
+    gap: 25px;
+}
+.board{
+    display: grid;
+    grid-template: repeat(3 , 1fr) / repeat(3 , 1fr);
+    gap: 15px;
+   
+}
+.box{
+    height: 90px;
+    width: 90px;
+    font-weight: bold;
+    font-size: 75px;
+    border: 5px solid rgb(76, 6, 189);
+    border-radius: 7px;
+    color: rgb(76, 6, 189);
+    background-color: black;
+    cursor: pointer;
+}
+.box:hover{
+    position: relative;
+    top: 3px;    
+}
+.showPlayer1{
+    color: rgb(76, 6, 189);
+}
+.showPlayer2{
+    color: #7cfc00;
+}
+.turn{
+    color:  #7cfc00;
+    font-weight: 600;
+}
+.winner{
+    color:  #7cfc00;
+}
+button.end{
+    color: white;
+    background-color: rgb(76, 6, 189);
+    border: 1px solid rgb(76, 6, 189) ;
+}
+dialog.end{
+    border: 4px solid rgb(76, 6, 189) ;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.651);
+    height: 170px;
+    width: 200px;
+}
+.end form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    gap: 15px;
+}
+dialog.end::backdrop{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.start{
+    border: 4px solid rgb(76, 6, 189) ;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    height: 80dvh;
+    width: 75dvh;
+    
+} 
+.start form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: inherit;
+    margin-top: 25dvh;
+}
+.start div{
+    display: flex;
+    gap: 5px;
+} 
+button{
+    background-color: rgb(76, 6, 189);
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid rgb(76, 6, 189);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+input{
+    height: 40px;
+    font-size: 25px;
+    color: #7cfc00;
+    background-color: black;
+    border: rgb(76, 6, 189) 2px solid;
+    padding: 5px;
+    border-color: #7cfc00;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 500;
+}
+input::placeholder{
+    color: rgb(76, 6, 189);
+}
