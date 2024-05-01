@@ -56,6 +56,8 @@ html , body{
 }
 .winner{
     color:  #7cfc00;
+    text-align: center;
+    font-size: 17px;
 }
 button.end{
     color: white;
@@ -124,4 +126,7 @@ input{
 }
 input::placeholder{
     color: rgb(76, 6, 189);
+}
+input:focus{
+    border: 1px solid rgb(76, 6, 189);
 }
